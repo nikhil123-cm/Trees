@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TREES</title>
+    <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Pacifico&family=Fredoka+One&family=Delius&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href="style.css">
+    <link rel = "stylesheet" href="animations.css">
+
+</head>
+<body>
+    
+                        <div class="backgroung">
+
+    <div class="heading">
+        <!-- <i class="fa-solid fa-tree"></i> -->
+<h1>
+    <p style="text-align: center;">TREES IN DSA</p>
+</h1>
+</div>
+
+ <!-- intro -->
+ <div class="intro content-box">
+    <h2>
+        <p>What is a Tree ?</p>
+        
+    </h2>
+    <hr>
+    <p>In data structures, a Tree is a popular and efficient way to organize hierarchical data. Unlike linear structures like arrays or linked lists, a tree is made up of nodes connected by edges, forming a parent-child relationship.
+      <br>  The most common real-world example is a file system on a computer, where you have folders (parents) that contain files and other folders (children).
+    </p>
+    <!-- tree image -->
+    <p style="text-align: center;">
+    <img src="imageoftreea.png" alt="Tree Example" height="400">
+    </p>
+    <br>
+</div>
+
+   <div class="usesoftree content-box">
+<!-- uses of tree -->
+<h2>
+    <p>Why we use Trees ?</p>
+    <span class="full-line-word">Trees</span>
+</h2>
+<hr>
+<P>
+    <b>Hierarchical Data: </b>Trees are perfect for storing data that has a natural hierarchy, like organization charts or family trees.
+    <br>
+    <b>Efficient Searching: </b>Certain types of trees, like Binary Search Trees, provide very fast searching of data (logarithmic time complexity).
+    <br>
+    <b>Efficient Insertion/Deletion: </b>They also provide quicker insertion and deletion operations compared to arrays.
+    <br>
+    <b>Representing Sorted Data: </b>Trees can be used to naturally represent sorted lists of data.
+Core Terminology
+     <br>
+    <p style="text-align: center;">
+        <img src="usesoftrees.png" alt="Uses of Tree" height="300px">
+    </p>
+   </div>
+<div class="terminology content-box">
+    <h3>To understand trees, you need to know the basic vocabulary associated with them.</h3>
+    <br>
+</P>
+    <!-- terminology of tree -->
+
+<p style="text-align: center;">
+<img src ="image1trees.png" alt="Tree" height ="500px">
+</P>
+<p>
+    <b>Node: </b>The fundamental part of a tree that stores data and may link to other nodes.
+    <br>
+    <b>Root: </b>The topmost node in a tree. It's the only node that doesn't have a parent. In the diagram above, 'A' is the Root.
+    <br>
+    <b>Edge: </b>The link or connection between two nodes.
+    <br>
+    <b>Parent: </b> A node that has child nodes linked to it. 'A' is the parent of 'B' and 'C'.
+    <br>
+    <b>Child: </b>A node that is linked from a parent node. 'B' and 'C' are children of 'A'.
+    <br>
+    <b>Siblings: </b>Nodes that share the same parent. 'B' and 'C' are siblings.
+    <br>
+    <b>Leaf Node: </b>A node that does not have any children. Also called an external node. 'D', 'E', 'F', and 'G' are leaf nodes.
+    <br>
+    <b>Internal Node: </b>A node that has at least one child. 'A', 'B', and 'C' are internal nodes.
+    <br>
+    <b>Height of a Tree: </b>The number of edges on the longest path from the root to a leaf node.
+    <br>
+    <b>Depth of a Node: </b>The number of edges from the root to that node. The depth of the root is 0.
+</p>
+</div>
+
+<div class="typesoftree content-box">
+<!-- Types of tree -->
+ <p>
+    <h2>Common Types of Trees</h2>
+    <hr>
+ </p>
+
+ <p>
+<b>1. Binary Tree (BT) :</b>
+A Binary Tree is a special type of tree where each node can have at most two children: a left child and a right child. This is one of the most commonly used trees in DSA.
+<br>
+ </p>
+<!-- image of BT -->
+ <p style="text-align: center;">
+    <img src ="BT.png" alt ="Binary Tree(BT)" height="500px">
+ </p>
+
+<p>
+    <b>2. Binary Search Tree (BST): </b>A Binary Search Tree is a binary tree with a specific ordering property that makes searching very efficient.
+<br>
+The value of all nodes in the left subtree of a node is less than or equal to the node's value.
+<br>
+The value of all nodes in the right subtree of a node is greater than the node's value.
+<br>
+Both the left and right subtrees must also be binary search trees.
+<br>
+</p>
+<!-- image of BST -->
+<p style="text-align: center;">
+    <img src ="BST.png" alt ="Binnary Search Tree(BST)" height="500px">
+ </p>
+
+<p>
+    <b>3. AVL Tree: </b>An AVL Tree is a self-balancing Binary Search Tree. This means it automatically adjusts its structure to keep its height as small as possible, ensuring that operations like search, insert, and delete remain efficient (logarithmic time) even in the worst-case scenario. It achieves this by maintaining a "balance factor" for each node.
+    <br>
+</p>
+<!-- image of AVL -->
+ <p style="text-align: center;">
+    <img src ="AVL.png" alt ="AVL" height="500px">
+ </p>
+
+ <p>
+    <b>4. Red-Black Tree: </b>A Red-Black Tree is another type of self-balancing binary search tree. It maintains its balance by assigning a color—either red or black—to each node in the tree. By enforcing a set of properties, it ensures that the longest path from the root to any leaf is no more than twice as long as the shortest path, keeping the tree roughly balanced. 
+    <br>
+    <b>Rule 1: </b>Every node is either red or black.
+    <br>
+    <b>Rule 2: </b>The root node is always black.
+    <br>
+    <b>Rule 3: </b>Every leaf (NIL/null node) is black.
+    <br>
+    <b>Rule 4: </b>If a node is red, then both of its children are black.
+    <br>
+    <b>Rule 5: </b>Every simple path from a given node to any of its descendant leaves contains the same number of black nodes.
+    <br>
+ </p>
+
+ <!-- image of RED BLACK TREE -->
+ <p style="text-align: center;">
+    <img src ="RED_BLACKTREE.png" alt ="RED BLACK TREE" height="500px">
+ </p>
+
+</div>
+<div class="DFStraversal content-box">
+ <p>
+    <h2> Tree Traversal</h2>
+    <hr>
+    Traversal is the process of visiting (checking or updating) each node in a tree exactly once. Unlike linear data structures, which have a clear beginning and end, trees can be traversed in multiple ways.
+    <br>
+ </p>
+
+<p>
+    <h3>Depth-First Search (DFS)</h3>
+    
+    DFS is an algorithm for traversing a tree that explores as far as possible along each branch before backtracking.
+    <br>
+</p>
+<!-- image of a tree traversal -->
+<p style="text-align: center;">
+    <img src ="exapleoftravesal.png" alt ="Example of Tree" height="300px">
+    <br>
+ </p>
+
+<p>
+    <b>1. In-order Traversal (Left, Root, Right)</b>
+    <br>
+    Visits the left subtree, then the root node, and finally the right subtree. For a BST, this traversal visits the nodes in ascending order.
+    <br>
+    <b>Result: </b>3, 5, 8, 10, 20, 25
+    <br>
+    <b>Code Example: </b>
+    <br>
+    <img src="inorder.png" alt="In-order Traversal Code" height="150px">
+    <br>
+</p>
+
+
+<p>
+    <b>2. Pre-order Traversal (Root, Left, Right)</b>
+    <br>
+    Visits the root node first, followed by the left subtree, and then the right subtree. Useful for creating a copy of a tree.
+    <br>
+    <b>Result: </b>10, 5, 3, 8, 20, 25
+    <br>
+    <b>Code Example: </b>
+    <br>
+    <img src="Preorder.png" alt="Pre-order Traversal Code" height="150px">
+    <br>
+</p>
+
+<p>
+    <b>3. Post-order Traversal (Left, Right, Root)</b>
+    <br>
+    Visits the left subtree, then the right subtree, and finally the root node. Useful for deleting a tree, as you delete children before the parent.
+    <br>
+    <b>Result: </b>3, 8, 5, 25, 20, 10
+    <br>
+    <b>Code Example: </b>
+    <br>
+    <img src="Postorder.png" alt="Post-order Traversal Code" height="150px">
+    <br>
+</p>
+
+<p>
+    <b>4.Breadth-First Search (BFS) / Level Order Traversal</b>
+    <br>
+    BFS visits nodes level by level, from top to bottom and left to right. This is typically implemented using a queue.
+    <br>
+    <b>Result: </b>10, 5, 20, 3, 8, 25
+    <br>
+    <b>Code Example: </b>
+    <br>
+    <img src="levelorder.png" alt="Level-order Traversal Code" height="140px">
+    <br>
+</p>
+</div>
+
+<div class="Applications content-box">
+<p>
+    <h2>Real-World Applications of Trees</h2>
+    <hr>
+    <b>File Systems: </b>Directories and files are organized in a tree structure.
+    <br>
+    <b>HTML Documents: </b>The structure of a web page is a tree, with the `` tag as the root.
+    <br>
+    <b>Databases: </b> B-Trees and T-Trees are used to structure indexes for fast data retrieval.
+    <br>
+    <b>Artificial Intelligence: </b> Decision trees are used in machine learning. Game AI often uses trees to represent possible moves (e.g., in chess).
+    <br>
+    <b>Network Routing: </b> Routers use tree-like structures (spanning trees) to find the shortest path for data packets.
+    <br>
+    <b>Compilers: </b> Syntax trees are used to parse and analyze source code.
+    <br>
+
+    <h4>Below are the some reference for Deep Learning</h4>
+    <hr>
+
+   1. https://www.geeksforgeeks.org/dsa/tree-data-structure/
+
+    <a href="https://www.geeksforgeeks.org/dsa/tree-data-structure/">GeeksforGeeks</a>
+    <br>
+   2. https://www.w3schools.com/dsa/dsa_theory_trees.php
+    <a href="https://www.w3schools.com/dsa/dsa_theory_trees.php">w3schools</a>   
+    <br>
+   3. https://www.codechef.com/learn/course/trees
+    <a href="https://www.codechef.com/learn/course/trees">codechef</a>
+
+    <br>
+   4. https://www.freecodecamp.org/news/all-you-need-to-know-about-tree-data-structures-bceacb85490c/
+    <a href="https://www.freecodecamp.org/news/all-you-need-to-know-about-tree-data-structures-bceacb85490c/">freecodecamp</a>
+    <br>
+   5. https://www.placementpreparation.io/blog/best-websites-to-practice-data-structures-and-algorithms/
+    <a href="https://www.placementpreparation.io/blog/best-websites-to-practice-data-structures-and-algorithms/">placementpreparation</a>
+</p>
+</div>
+
+
+</div>
+</body>
+</html>
+
